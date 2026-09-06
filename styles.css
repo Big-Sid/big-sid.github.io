@@ -217,8 +217,14 @@ a:focus-visible {
   color: var(--link);
 }
 
+.publication-item .pub-authors {
+  margin-bottom: 0.3rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
 .publication-item .pub-venue {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1rem;
   color: var(--muted);
   font-size: 16px;
   font-style: italic;
@@ -226,11 +232,6 @@ a:focus-visible {
 
 .publication-item p {
   font-size: 16px;
-}
-
-.publication-item .citation {
-  margin-bottom: 0;
-  color: #5f666b;
 }
 
 .page-footer {
@@ -322,8 +323,9 @@ a:focus-visible {
 
   .author-links {
     display: flex;
+    flex-wrap: wrap;
     align-self: start;
-    gap: 1rem;
+    gap: 0.25rem 1rem;
   }
 
   .author-links li {
